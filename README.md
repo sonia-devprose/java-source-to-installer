@@ -1,6 +1,6 @@
 
 
-# Building a Java App: From Source Code to Windows Installer
+# Building a Java App: From Source Code to Windows Installer (using IntelliJ IDE)
 
 Building this application is a "vertical slice" of software engineering. You aren't just writing code; you are managing the entire **Lifecycle** of a product.
 
