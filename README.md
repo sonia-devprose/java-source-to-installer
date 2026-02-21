@@ -20,7 +20,7 @@ Java is unique because it doesn't run directly on your hardware. It goes through
 
 ### 2. The JRE vs. JDK Distinction
 
-<img width="1041" height="579" alt="Screenshot 2026-02-18 180009" src="https://github.com/user-attachments/assets/764fe41d-0af6-4b83-bed0-402fa18067b8" />
+<img width="1041" height="483" alt="jdk" src="https://github.com/user-attachments/assets/89a4d6bf-3386-4295-9b63-8b5e3606b2c6" />
 
 
 This is a common hurdle for new developers.
