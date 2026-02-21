@@ -1,4 +1,4 @@
----
+
 
 # Building a Java App: From Source Code to Windows Installer
 
@@ -261,8 +261,6 @@ jpackage `
 * **`javac` not recognized:** Reinstall JDK 21 and check "Add to PATH".
 * **WiX not found:** Ensure you installed the WiX toolset and **restarted your PC**.
 * **Red errors in code:** Ensure your filename is exactly `HelloWorldApp.java` (case sensitive).
-
----
 
 ## 🧹 Part 7 — Uninstall
 
