@@ -121,20 +121,20 @@ Download for free from [JetBrains](https://www.jetbrains.com/idea/download).
 | **Language** | Java |
 | **Build system** | IntelliJ (NOT Maven or Gradle) |
 | **JDK** | 21 (Click "Add JDK" if not listed) |
-| **Project name** | `HelloWorldApp` |
-| **Location** | `C:\JavaProjects\HelloWorldApp` |
+| **Project name** | `SystemMonitorApp` |
+| **Location** | `C:\JavaProjects\SystemMonitorApp` |
 
 ### 2. Write the Java Source Code
 
 1. In the Project panel, expand `src`.
-2. Right-click `src` → **New** → **Java Class**. Name it `HelloWorldApp`.
+2. Right-click `src` → **New** → **Java Class**. Name it `SystemMonitorApp`.
 3. Paste the following code:
 
 ```java
 import javax.swing.*;
 import java.awt.*;
 
-public class HelloWorldApp {
+public class SystemMonitorApp {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Hello World App v1.0");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -196,10 +196,10 @@ public class HelloWorldApp {
 
 1. Go to **File** → **Project Structure** (`Ctrl + Alt + Shift + S`).
 2. Click **Artifacts** → **+** → **JAR** → **From modules with dependencies**.
-3. Select `HelloWorldApp` as the Main Class. Click **OK**.
-4. Build it: **Build** → **Build Artifacts** → **HelloWorldApp:jar** → **Build**.
+3. Select `SystemMonitorApp` as the Main Class. Click **OK**.
+4. Build it: **Build** → **Build Artifacts** → **SystemMonitorApp:jar** → **Build**.
 
-> ✅ **Location:** `out\artifacts\HelloWorldApp_jar\HelloWorldApp.jar`
+> ✅ **Location:** `out\artifacts\SystemMonitorApp_jar\SystemMonitorApp.jar`
 
 ---
 
@@ -211,7 +211,7 @@ Open the IntelliJ Terminal (`Alt + F12`) and run:
 
 ```powershell
 mkdir input
-copy out\artifacts\HelloWorldApp_jar\HelloWorldApp.jar input\
+copy out\artifacts\SystemMonitorApp_jar\SystemMonitorApp.jar input\
 
 ```
 
@@ -222,9 +222,9 @@ Run the following command to bundle your app with its own JRE:
 ```powershell
 jpackage `
   --input input `
-  --name HelloWorldApp `
-  --main-jar HelloWorldApp.jar `
-  --main-class HelloWorldApp `
+  --name SystemMonitorApp `
+  --main-jar SystemMonitorApp.jar `
+  --main-class SystemMonitorApp `
   --type exe `
   --app-version 1.0 `
   --description "Hello World Java Application" `
@@ -235,15 +235,15 @@ jpackage `
 
 ```
 
-> ✅ **Result:** `HelloWorldApp-1.0.exe` (~52 MB) is created in your project root.
+> ✅ **Result:** `SystemMonitorApp-1.0.exe` (~52 MB) is created in your project root.
 
 ---
 
 ## 👤 Part 4 — User Role: Install and Run
 
-1. **Double-click** `HelloWorldApp-1.0.exe`.
+1. **Double-click** `SystemMonitorApp-1.0.exe`.
 2. Follow the Setup Wizard (Click Next, Install, Finish).
-3. **Verify:** The app window shows its Java Home as `C:\Program Files\HelloWorldApp\runtime\`. This proves it is using its own bundled Java!
+3. **Verify:** The app window shows its Java Home as `C:\Program Files\SystemMonitorApp\runtime\`. This proves it is using its own bundled Java!
 
 ---
 
@@ -263,10 +263,10 @@ jpackage `
 
 * **`javac` not recognized:** Reinstall JDK 21 and check "Add to PATH".
 * **WiX not found:** Ensure you installed the WiX toolset and **restarted your PC**.
-* **Red errors in code:** Ensure your filename is exactly `HelloWorldApp.java` (case sensitive).
+* **Red errors in code:** Ensure your filename is exactly `SystemMonitorApp.java` (case sensitive).
 
 ## 🧹 Part 7 — Uninstall
 
-To clean up, go to **Windows Settings** → **Apps** → **Installed Apps**, search for `HelloWorldApp`, and click **Uninstall**.
+To clean up, go to **Windows Settings** → **Apps** → **Installed Apps**, search for `SystemMonitorApp`, and click **Uninstall**.
 
 ---
