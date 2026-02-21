@@ -20,6 +20,9 @@ Java is unique because it doesn't run directly on your hardware. It goes through
 
 ### 2. The JRE vs. JDK Distinction
 
+<img width="1041" height="579" alt="Screenshot 2026-02-18 180009" src="https://github.com/user-attachments/assets/764fe41d-0af6-4b83-bed0-402fa18067b8" />
+
+
 This is a common hurdle for new developers.
 
 * **JDK (Java Development Kit):** The "Toolbox." It contains the compiler (`javac`) and the packager (`jpackage`). Only the **Developer** needs this.
